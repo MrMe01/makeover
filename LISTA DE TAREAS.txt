@@ -1,0 +1,12 @@
+
+
+//Los empleados se generan: creando otro usuario tipo employee y luego agregandolo a la tambla employee
+
+
+//servicios del empleado al comprar: selecciono de la pivote de branch_service donde con el id del servicio usando la branch
+
+
+*Autenticacion de usuarios
+*CRUD brand
+*CRUD branch
+*CRUD brand
