@@ -17,3 +17,5 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 // Auth::routes();
+// 
+// Route::post('login','Auth\LoginController@login')->name('login');

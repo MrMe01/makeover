@@ -1,3 +1,32 @@
+verificar bien los modelos
+
+
+######################################################
+###################### Notas #########################
+######################################################
+
+	* Hacer video con la morra
+	* Mantel blanco, azul y rosa
+	* Folletos y tarjetas
+	* Tazas
+	
+
+
+
+######################################################
+###################### CATEGORIAS - CATEGORIES #######
+######################################################
+	* Barberías
+	* Estéticas
+	* Taller De Perforaciones Corporales
+	* Taller De Tatuajes
+	* Manicurista
+	* Maquillista
+
+
+
+
+
 
 
 //Los empleados se generan: creando otro usuario tipo employee y luego agregandolo a la tambla employee
@@ -6,7 +35,16 @@
 //servicios del empleado al comprar: selecciono de la pivote de branch_service donde con el id del servicio usando la branch
 
 
-*Autenticacion de usuarios
-*CRUD brand
-*CRUD branch
-*CRUD brand
+
+
+@if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+
+                                <li>{{ $error }}</li>
+                            @endforeach
+                            {{-- {{ dd($errors) }} --}}
+                        </ul>
+                    </div>
+                @endif
