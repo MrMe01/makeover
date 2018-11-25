@@ -22,8 +22,8 @@ class CreateBrandsTable extends Migration
             $table->longText('description');
             $table->string('image');
             $table->string('types');//Lo traigo de las categories, puede tener varios
-            
             $table->string('email');
+            $table->string('paypal');
             $table->integer('user_id')->unsigned();
             $table->timestamps();
 
