@@ -5,7 +5,7 @@
 @section('content')
 
 	 <section class="section">
-    <a class="close" href="home.html">Exit <i class="fas fa-sign-out-alt"></i></a>
+    <a class="close" href="/home">Exit <i class="fas fa-sign-out-alt"></i></a>
 	<h1 class="title">SIGN UP</h1>
 
 	<div class="form-progress">
