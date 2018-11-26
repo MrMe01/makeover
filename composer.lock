@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "925dad0d3372c141f1ce6fdcd89601f5",
+    "content-hash": "63e660c32b308886ed02d1614d92ef65",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -777,16 +777,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v7.18.0",
+            "version": "v7.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "48fb3dc4f60a2a06ec7e149a22464ae484a81156"
+                "reference": "234a43bf963e659bbbcc872e153f07051c23702b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/48fb3dc4f60a2a06ec7e149a22464ae484a81156",
-                "reference": "48fb3dc4f60a2a06ec7e149a22464ae484a81156",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/234a43bf963e659bbbcc872e153f07051c23702b",
+                "reference": "234a43bf963e659bbbcc872e153f07051c23702b",
                 "shasum": ""
             },
             "require": {
@@ -824,7 +824,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2018-09-29T20:46:31+00:00"
+            "time": "2018-11-11T20:06:55+00:00"
         },
         {
             "name": "laravel/tinker",

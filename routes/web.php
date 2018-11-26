@@ -11,13 +11,46 @@
 |
 */
 
+Route::get('/home', function () {
+    return view('homePrincipal');
+});
+
+Route::get('/catalog', function () {
+    return view('catalog');
+});
+
+Route::get('/promotions', function () {
+    return view('promotions');
+});
+
+Route::get('/details', function () {
+    return view('details');
+});
+
+Route::get('/profileProvider', function () {
+    return view('profileProvider');
+});
+
+Route::get('/cart', function () {
+    return view('cart');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/homes', function () {
+    return view('homes');
+});
+
 Route::get('/', function () {
     return view('auth.login');
 });
 
 // Auth::routes();
 
-Route::post('login','Auth\LoginController@login')->name('login');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

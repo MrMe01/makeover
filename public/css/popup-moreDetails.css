@@ -1,0 +1,96 @@
+.popup-details{
+    padding: 20px;
+    background-color: aliceblue;
+    background-image: url(../img/portadas/login2.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    width: 60%;
+    height: 600px;
+    margin: 3% auto;
+}
+
+.form-detail{
+    width: 924px;
+    
+    height: 577px;
+    border-radius: 5px;
+    margin: 1% auto;
+    box-shadow: 0 9px 50px white;
+  /*  padding: 2%;*/
+    background: linear-gradient(to right, #2196f3 , #ff9de2);
+    /*background-image: linear-gradient(-225deg, #2196f3 50%, #ff9de2 50%);*/
+    border: 2px solid #deecfc;
+
+}
+
+.form-detail .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+.close-details{
+    font-size: 53px;
+    position: absolute;
+    margin: auto;
+    color: white;
+   
+    margin-top: -59px;
+
+margin-left: 101%;
+}
+
+.title-modal{
+    background: white;
+    padding: 10px;
+}
+.discount-modal{
+    text-decoration: line-through;
+    color: #a100ff;
+    margin-top: 3px;
+}
+
+.price2{
+    font-size: 21px;
+    margin-left: 15px;
+    color: #ff9de2;
+}
+
+.price-modal{
+    width: 35%;
+}
+
+.row-profile-modal{
+    width: 67%;
+}
+
+.btn3:hover{
+    background: white;
+    border: 2px solid white;
+    color: #a100ff;
+}
+
+.descrip-modal{
+    
+    width: 100%;
+    background: white;
+    height: 380px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.padding-10{
+    padding: 10px;
+}
