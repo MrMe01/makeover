@@ -1283,6 +1283,7 @@ button:hover {
 
 .col-1-4 {
   width: 25%;
+      margin-right: 10px;
 }
 
 @media (max-width: 760px) {

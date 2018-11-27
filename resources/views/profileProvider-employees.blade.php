@@ -110,7 +110,7 @@
                                                 </div>  
                                    </div>
                                    </div>
-                                        >
+                                       
                                     </div>
                                     <div class="category-item bordered">
                                         <a class="link weight-medium" href="/profileProvider">
@@ -128,7 +128,7 @@
                                         </a>
                                     </div>
                                     <div class="category-item bordered">
-                                        <a class="link weight-medium" href="/catalog">
+                                        <a class="link weight-medium" href="/catalogProvider">
                                             Catalog
                                         </a>
                                     </div>

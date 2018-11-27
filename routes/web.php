@@ -41,7 +41,7 @@ Route::get('/services', function () {
     return view('profileProvider-services');
 });
 
-Route::get('/catalog', function () {
+Route::get('/catalogProvider', function () {
     return view('profileProvider-catalog');
 });
 
@@ -54,6 +54,10 @@ Route::get('/cart', function () {
 
 Route::get('/register', function () {
     return view('register');
+});
+
+Route::get('/schedule', function () {
+    return view('schedule');
 });
 
 
