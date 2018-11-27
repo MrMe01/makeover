@@ -192,7 +192,7 @@
 
                             <div class="payment wow fadeInDown">
                                 <div class="responsive-img">
-                                    <img src="assets/img/banks.png" alt="Tarjetas de Crédito" alt="Tarjetas de Crédito">
+                                    <img src="{{  URL::asset('img/tarjetas/tarjetas.jpeg') }}" alt="Tarjetas de Crédito" alt="Tarjetas de Crédito">
                                 </div>
                             </div>
                             <div class="white-space-64"></div>

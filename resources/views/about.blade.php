@@ -105,7 +105,7 @@ variedad de servicios que existen para su consumo.</h3>
                                                <i class="fa fa-user-circle icon-textarea"></i>
                                              </span>
                                             <!--   user name Input-->
-                                             <input class="form-input" id="txt-input" type="text" placeholder="Your name" required>
+                                             <input class="form-input" id="n" type="text" placeholder="Your name" required>
                                             </div>
                                            
                                           <br>
@@ -115,7 +115,7 @@ variedad de servicios que existen para su consumo.</h3>
                                              
                                             <!--   user name Input-->
                                              
-                                                <textarea class="form-input" id="txt-input" placeholder="Message" rows="4" cols="50" name="comment" form="usrform" required></textarea>
+                                                <textarea class="form-input" id="m" placeholder="Message" rows="4" cols="50" name="comment" form="usrform" required></textarea>
                                             </div>
                                            
                                     <!--        buttons -->
