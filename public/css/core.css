@@ -463,6 +463,10 @@ label {
     color: #3f51b5;
 }
 
+.color-pink{
+    color: #ffffff;
+}
+
 .color-red {
     color: var(--red);
 }

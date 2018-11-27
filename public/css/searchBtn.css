@@ -31,7 +31,6 @@
 
 .search-text:focus:hover {
   border-bottom: 1px solid #ff00d0;
-
 }
 
 .search-text:focus {
@@ -58,8 +57,8 @@
 }
 
 .search-btn:hover {
-  opacity: 0.8 !important;
-  color: #0083ff !important;
+  opacity: 0.8;
+  color: #0083ff;
 }
 
 @media screen and (max-width: 1280px){

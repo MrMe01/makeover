@@ -59,6 +59,9 @@
                                             <a class="weight-medium iconItem" href="/register">
                                                 REGISTER
                                             </a>
+                                            <a class="weight-medium iconItem" href="/register">
+                                                EXIT
+                                            </a>
                                                 </div>
                                             </div>
                                         </div>

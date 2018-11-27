@@ -28,10 +28,26 @@ Route::get('/details', function () {
     return view('details');
 });
 
+/* PROFILE 4 SECTIONES*/
 Route::get('/profileProvider', function () {
     return view('profileProvider');
 });
 
+Route::get('/employees', function () {
+    return view('profileProvider-employees');
+});
+
+Route::get('/services', function () {
+    return view('profileProvider-services');
+});
+
+Route::get('/catalog', function () {
+    return view('profileProvider-catalog');
+});
+
+
+
+/* CARRITO */
 Route::get('/cart', function () {
     return view('cart');
 });
