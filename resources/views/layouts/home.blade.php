@@ -75,7 +75,7 @@
                 <label for="checkbox1" class="wow fadeInUp">
                         <span class="toggle"><i class="fas fa-bars"></i></span>
               <ul class="menu first">
-                <li class="home-item"><a href="/home">HOME</a></li>
+                <li class="home-item"><a href="/">HOME</a></li>
                 <li><a href="/promotions">PROMOTIONS</a></li>  
                 <li><a href="/catalog">CATALOG</a></li>  
                 <li><a href="/about">ABOUT US</a></li>  

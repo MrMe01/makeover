@@ -442,26 +442,68 @@ class DatabaseSeeder extends Seeder
             'description'       => 'Se llama manicuro,1​ manicura o manicurista2​ a la persona que tiene por ocupación el cuidado y embellecimiento de las manos y en especial, el cuidado y pintura de las uñas. sin contar con muchas otras ocupaciones propias del área.',
             'image'             => 'manicurista.jpg',
         ]);
-Manicure tradicional
-Manicure permanente
-Extensión de las uñas de las manos
-Pedicure tradicional
-Pedicure permanente
-Manicure y pedicure tradicional
-Manicure y pedicure permanente
+                DB::table('services')->insert([
+                    'name'              => 'Manicure tradicional',
+                    'description'       => 'Una manicura es un tratamiento de belleza cosmético para las uñas y manos que suele realizarse en casa o en un salón de belleza. En una manicura se cortan o liman los bordes de las uñas, se realizan masajes a las manos y se aplica esmalte de uñas.',
+                    'image'             => '5.png',
+                    'category_id'       => 5,
+                ]);
 
-                                DB::table('services')->insert([
-                                    'name'              => '',
-                                    'description'       => '',
-                                    'image'             => '',
-                                    'category_id'       => 5,
-                                ]);
+                DB::table('services')->insert([
+                    'name'              => 'Manicure permanente',
+                    'description'       => 'El esmaltado permanente es un tipo de técnica en manicura que evita tener que estar pintándose las uñas todas las semanas. Se trata de un tipo de esmalte que se aplica de forma rápida y fácil y que consigue una durabilidad y brillo como si las uñas estuviesen recién pintadas',
+                    'image'             => '5.png',
+                    'category_id'       => 5,
+                ]);
+                DB::table('services')->insert([
+                    'name'              => 'Pedicure tradicional',
+                    'description'       => 'Una pedicura es un tratamiento de belleza cosmético para las uñas de los pies  que suele realizarse en casa o en un salón de belleza. En una pedicura se cortan o liman los bordes de las uñas, se realizan masajes a los pies y se aplica esmalte de uñas.',
+                    'image'             => '5.png',
+                    'category_id'       => 5,
+                ]);
+                DB::table('services')->insert([
+                    'name'              => 'Pedicure permanente',
+                    'description'       => 'El esmaltado permanente es un tipo de técnica en pedicura que evita tener que estar pintándose las uñas todas las semanas. Se trata de un tipo de esmalte que se aplica de forma rápida y fácil y que consigue una durabilidad y brillo como si las uñas estuviesen recién pintadas',
+                    'image'             => '5.png',
+                    'category_id'       => 5,
+                ]);
+
+
+                                
 
         DB::table('categories')->insert([
             'name'              => 'Maquillistas',
             'description'       => 'Se denomina maquillador a la persona que tiene como profesión encargarse de aplicar el maquillaje sobre la cara u otras partes del cuerpo a personas que desarrollan su profesión ante el público, tales como las dedicadas al mundo del espectáculo o los medios audiovisuales.',
             'image'             => 'maquillista.jpg',
         ]);
+
+                DB::table('services')->insert([
+                    'name'              => 'Maquillaje de novia con prueba de maquillaje incluida',
+                    'description'       => '',
+                    'image'             => '5.png',
+                    'category_id'       => 6,
+                ]);
+                DB::table('services')->insert([
+                    'name'              => 'Maquillaje y peinado de novia con ambas pruebas incluidas',
+                    'description'       => '',
+                    'image'             => '5.png',
+                    'category_id'       => 6,
+                ]);
+                DB::table('services')->insert([
+                    'name'              => 'Maquillaje de fiesta, invitada o familiares de la novia',
+                    'description'       => '',
+                    'image'             => '5.png',
+                    'category_id'       => 6,
+                ]);
+                DB::table('services')->insert([
+                    'name'              => 'Maquillaje y peluquería de fiesta, invitada o familiares',
+                    'description'       => '',
+                    'image'             => '5.png',
+                    'category_id'       => 6,
+                ]);
+
+
+
 
     }
 }

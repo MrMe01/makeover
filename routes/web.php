@@ -11,17 +11,18 @@
 |
 */
 
-Route::get('/home', function () {
-    return view('homePrincipal');
-});
 
-Route::get('/catalog', function () {
-    return view('catalog');
+Route::get('/homes', function () {
+    return view('home.homes');
 });
+Route::get('/','HomeController@index');
 
-Route::get('/promotions', function () {
-    return view('promotions');
-});
+
+
+Route::get('/catalog','CatalogController@index');
+
+Route::get('/promotions','PromotionController@index');
+
 
 Route::get('/details', function () {
     return view('details');
@@ -44,12 +45,10 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/homes', function () {
-    return view('homes');
-});
+
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('homePrincipal');
 });
 
 // Auth::routes();

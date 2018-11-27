@@ -12,11 +12,12 @@ use Faker\Generator as Faker;
 | model instances for testing / seeding your application's database.
 |
 */
-$address1 = "Casa blanca de dos pisos con patio grande";
-$address2 = "Casa con rejas negras en forma de flores";
-$address3 = "Casa #5, segundo piso";
+
 
 $factory->define(App\User::class, function (Faker $faker) {
+    $address1 = "Casa blanca de dos pisos con patio grande";
+$address2 = "Casa con rejas negras en forma de flores";
+$address3 = "Casa #5, segundo piso";
     return [
         'name'              => $faker->name,
         'email'             => $faker->unique()->safeEmail,
