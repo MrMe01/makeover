@@ -20,9 +20,9 @@ $address2 = "Casa con rejas negras en forma de flores";
 $address3 = "Casa #5, segundo piso";
     return [
         'name'              => $faker->name,
-        'email'             => $faker->unique()->safeEmail,
+        'email'             => 'joandres098@gmail.com',
         // 'email' => 'joandres098@gmail.com',
-        'password'          => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+        'password'          => 'secret', // secret
         'remember_token'    => str_random(10),
         'address'           => $faker->address,
         'cp'                => $faker->randomElement(['77536','77532','77598','88753','96321','78954']),

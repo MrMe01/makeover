@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 use Auth;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 // use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -9,19 +10,46 @@ use App\Http\Controllers\Controller;
 class LoginController extends Controller
 {
    public function login(Request $request)
-   {    
+   {  
+
+    //lo que mando
+    
+    // //todos los usuarios solo hay 1
+    // $userdb = User::all();
+    // //busco directo por email y password que envie
+    
+
+    // return " FORMULARIO : " .$email." - ".$pass . 
+    // " <br> TODOS : " .    $userdb[0]->email." - ". $userdb[0]->password .
+    // " <br>VALIDADO : " . $userValidado[0]->email." - ".$userValidado[0]->password;
+
+// dd($userValidado->id);
+
+
+    //OJO CON EL BCRYP PARA LA CONTRASEÑA
     // return $request->path();
         $rules =[
             "email"     =>"required|email|string",
             "password"  =>"required|string",
         ];
+        
        $credentials = $this->validate($request,$rules);
-
-       if (Auth::attempt($credentials)) {
-           return redirect('home');
+       $pass = $request->password;
+        $email = $request->email;
+       //  //Auth::login($user); 
+       // $user = User::where('email',$credentials['email'])->where('password',$credentials['password'])->get()[0];
+       // // dd($user);
+       $userValidado = User::where('email',$email)->where('password',$pass)->first();
+       if (Auth::loginUsingId($userValidado->id)) {
+           return redirect('/');
+          
        }
+       return "nada";
        //http://makeover.com/#popup1
        //redirect()->getUrlGenerator()->previous()
+       //
+ 
+       
        return redirect('http://makeover.com/#popup1')
        ->withErrors(['email' => trans('auth.failed')])
        ->withInput(['email' =>$request->email]);
@@ -32,7 +60,7 @@ class LoginController extends Controller
        return redirect('/');
    }
 
-
+//joandres098@gmail.com
 }
  /*
     |--------------------------------------------------------------------------

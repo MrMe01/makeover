@@ -12,7 +12,15 @@
 
     <link rel="stylesheet" href="{{URL::asset('css/viewProfile-pop.css')}}" media="screen">
     <script type="text/javascript" src="js/viewProfile-pop.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(document).on('click','#logout',function(){
+                alert("fghj");
+            });            
+        });
+    </script>
 </head>
 <body>
 
@@ -54,19 +62,26 @@
                                         <div class="column icons-main" >
                                             <div class="row rowIcon justify-end">
                                                 <div class="icon align-center justify-center">
-                                          <a href="/cart"> <i class="fas fa-shopping-cart iconItem"></i> </a>
-                                            <a class="weight-medium iconItem" href="#popup1">
+                                          
+                                            {{-- CARRITO --}}
+                                          @if (Auth::check())
+                                          <a href="/cart" id="#cc"> <i class="fas fa-shopping-cart iconItem"></i> </a>
+                                              <a class=" account-btn weight-medium iconItem">
+                                                <span style="font-size: 2rem;"><i class="fas fa-user-circle"></i></span>
+                                                </a>
+                                          @else
+                                               <a class="weight-medium iconItem" href="#popup1">
                                                 LOGIN
                                             </a>
                                             <a class="weight-medium iconItem" href="/register">
                                                 REGISTER
                                             </a>
+                                          @endif
+                                           
 
                                                                                      
 
-                                             <a class=" account-btn weight-medium iconItem">
-                                                PROFILE
-                                            </a>
+                                             
             <div id="account-panel">
 
             <div class="account-header row-responsive" >
@@ -97,7 +112,7 @@
 
                     <li>Upgrade to <span>pro</span></li>
                     <li>Schedule</li>
-                    <li>Sign Out</li>
+                    <li id="logout"><span style="font-size: 2rem;"><a class="fas fa-arrow-alt-circle-right"></a></span></li>
                 </ul>
 
             </div><!--end account-menu-->
@@ -248,7 +263,9 @@
              <div id="popup1" class="overlay">
             <div class="popup">
                 <a class="close" href="#">&times;</a>
-                <form class="login-form">
+                <form class="login-form" method="POST" action="/login"> 
+                    @csrf
+                    
                                        <!--   con = Container  for items in the form-->
                                        <div class="con">
                                        <!--     Start  header Content  -->
@@ -274,7 +291,7 @@
                                                <i class="fa fa-user-circle"></i>
                                              </span>
                                             <!--   user name Input-->
-                                             <input class="form-input2" id="txt-input2" type="text" placeholder="@UserName" required>
+                                             <input class="form-input2" name="email" id="email" type="email" placeholder="@Email" value="{{ old('email') }}" required>
                                             </div>
                                           <br>
 
@@ -291,25 +308,16 @@
                                             <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
                                          </span>
                                            </div>
-
+                                        <div class="row justify-center">
+                                            {!! $errors->first('email','<span>:message</span>') !!}
+                                        </div>
 
                                           <br>
                                     <!--        buttons -->
                                     <!--      button LogIn -->
-                                          <button class="log-in2"> Log In </button>
+                                          <button type="submit" class="log-in2"> Log In </button>
                                        </div>
 
-                                    <!--   other buttons -->
-                                       <div class="other">
-                                    <!--      Forgot Password button-->
-                                          <button class="btn submits frgt-pass">Forgot Password</button>
-                                    <!--     Sign Up button -->
-                                          <button class="btn submits sign-up">Sign Up 
-                                    <!--         Sign Up font icon -->
-                                          <i class="fa fa-user-plus" aria-hidden="true"></i>
-                                          </button>
-                                    <!--      End Other the Division -->
-                                       </div>
 
                                     <!--   End Conrainer  -->
                                       </div>
