@@ -13,22 +13,21 @@
     <link rel="stylesheet" href="{{URL::asset('css/viewProfile-pop.css')}}" media="screen">
     <script type="text/javascript" src="js/viewProfile-pop.js" defer></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <style type="text/css">
+    {{-- <style type="text/css">
         #logout{
             cursor: pointer;
         }
-    </style>
-    <script type="text/javascript">
+    </style> --}}
+    {{-- <script type="text/javascript">
         $(document).ready(function(){
 
-            $(document).on('click','#logout',function(){
+            $(document).on('click','account-menu-list li #logout',function(){
                 alert("fghj");
             });            
         });
-    </script>
+    </script> --}}
 </head>
 <body>
-
     @yield('facebook')
     
    <div class="main flex">
@@ -117,7 +116,7 @@
 
                     <li>Upgrade to <span>pro</span></li>
                     <li>Schedule</li>
-                    <li id="logout">{{-- <span style="font-size: 2rem;"><a class="fas fa-arrow-alt-circle-right"></a></span> --}}Cerrar Sesión</li>
+                    <li >{{-- <span style="font-size: 2rem;"><a class="fas fa-arrow-alt-circle-right"></a></span> --}}<a id="logout" href="/logout">Cerrar Sesión</a></li>
                 </ul>
 
             </div><!--end account-menu-->

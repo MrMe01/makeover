@@ -11,7 +11,7 @@
 |
 */
 Route::post('/login','Auth\LoginController@login')->name('login');
-Route::post('logout','Auth\LoginController@logout')->name('logout');
+Route::get('logout','Auth\LoginController@logout')->name('logout');
 
 Route::get('/homes', function () {
     return view('home.homes');
