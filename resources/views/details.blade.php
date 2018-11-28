@@ -38,7 +38,38 @@
     <!-- END SLICK -->
     
     <script type="text/javascript" src="{{asset('js/products-cards.js')}}" defer></script>
-    
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(document).on("click","#addtocart",function(){
+                var serv = @php
+                    echo $serv;
+                @endphp;
+                
+                var name = serv["name"];
+                var extract = serv["description"];
+                var quantity = 1;
+                var price = serv["price"];
+                $.ajax({
+                type: "POST",
+                url: '/addtocart',
+                data: { name: name,extract:extract,quantity:quantity,price:price, _token: '{{csrf_token()}}' },
+                success: function (data) {
+                   console.log(data);
+                },
+                error: function (data, textStatus, errorThrown) {
+                    console.log("error en la red");
+
+                },
+            });
+            });
+
+// 'name' => 'playera azul',
+//             'extract' => 'azul bonito',
+//             'quantity' => 2,
+//             'price' => 2,
+        });
+    </script>
 
 @endsection
 
@@ -216,7 +247,7 @@
                                   <div class="row justify-center">
                                     <div class="row" style="width: 59%;">
                                      <div class="div justify-center color-lightGray">
-                                                <a class="btn btn-cart btn-carrito color-white " href="#">
+                                                <a class="btn btn-cart btn-carrito color-white " id="addtocart" href="#">
                                                     ADD TO CART
                                                 </a>
                                      </div>

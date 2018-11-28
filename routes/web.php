@@ -55,9 +55,9 @@ Route::get('/catalogProvider', function () {
 
 
 /* CARRITO */
-Route::get('/cart', function () {
-    return view('cart');
-});
+Route::get('/cart', "CartController@index");
+Route::post('/addtocart', "CartController@addtocart");
+
 
 Route::get('/register', function () {
     return view('register');

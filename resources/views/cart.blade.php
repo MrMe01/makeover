@@ -68,91 +68,17 @@
                                         </div>
                                       </div>
                                       <p>
-                                        Six Cup Chemex<sup>&reg;</sup><br />
-                                        <span class="itemNum">CM-6A</span>
+                                        {{ $data['name'] }}<sup>&reg;</sup><br />
+                                        {{-- <span class="itemNum">CM-6A</span> --}}
                                       </p>
-                                      <p class="description">Simple function and visual elegance combine for the optimum extraction of full
-                                            rich&ndash;bodied coffee.</p>
+                                      <p class="description">{{ $data['extract']}}</p>
                                     </td>
-                                    <td>$38.90</td>
+                                    <td>$ {{ $data['price'] }}</td>
                                     <td>
-                                      <input type="number" class="quantity" value="1" min="1" />
+                                      <input type="number" class="quantity" value="{{ $data['quantity'] }}" min="1" />
                                       <a href="#" class="remove">Remove</a>
                                     </td>
-                                    <td class="itemTotal">$38.90</td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <div class="item">
-                                        <div class="item-front">
-                                          <img src="img/barber.jpg" />
-                                        </div>
-                                        <div class="item-back">
-                                          <img src="img/barber2.jpg" />
-                                        </div>
-                                      </div>
-                                      <p>
-                                        Hario Skerton Grinder<br />
-                                        <span class="itemNum">MSCS-2TB</span>
-                                      </p>
-                                      <p class="description">Small, lightweight, and portable, the Skerton is the ideal hand grinder for the traveling coffee 
-                                            enthusiast, or the home enthusiast on a limited budget.</p>
-                                    </td>
-                                    <td>$40.08</td>
-                                    <td>
-                                      <input type="number" class="quantity" value="1" min="1" />
-                                      <a href="#" class="remove">Remove</a>
-                                    </td>
-                                    <td class="itemTotal">$40.08</td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <div class="item">
-                                        <div class="item-front">
-                                          <img src="img/makeup.jpg" />
-                                        </div>
-                                        <div class="item-back">
-                                          <img src="img/makeupgirl.jpg" />
-                                        </div>
-                                      </div>
-                                      <p>
-                                        Hario V60 Kettle<br />
-                                        <span class="itemNum">VKB-120HSV</span>
-                                      </p>
-                                      <p class="description">
-                                        Shaped like a beehive, this stylish stainless steel kettle is perfect for coffee dripping.
-                                      </p>
-                                    </td>
-                                    <td>$50.25</td>
-                                    <td>
-                                      <input type="number" class="quantity" value="1" min="1" />
-                                      <a href="#" class="remove">Remove</a>
-                                    </td>
-                                    <td class="itemTotal">$50.25</td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <div class="item">
-                                        <div class="item-front">
-                                          <img src="img/girl3.jpg" />
-                                        </div>
-                                        <div class="item-back">
-                                          <img src="img/girl.jpg" />
-                                        </div>
-                                      </div>
-                                      <p>
-                                        Zingerman&rsquo;s Brazil Sweet Yellow<br />
-                                        <span class="itemNum">P-COF-SYB</span>
-                                      </p>
-                                      <p class="description">Zingerman&rsquo;s Roastmaster Allen treats it gently, so the brewed cup is amazingly sweet, very nutty,
-                                            and super smooth, almost buttery, with lots of happy high notes.</p>
-                                    </td>
-                                    <td>$22.00</td>
-                                    <td>
-                                      <input type="number" class="quantity" value="1" min="1" />
-                                      <a href="#" class="remove">Remove</a>
-                                    </td>
-                                    <td class="itemTotal">$22.00</td>
+                                    <td class="itemTotal">$ {{ $data['price'] }}</td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -205,7 +131,7 @@
                  
 <form action="" class="form scroll" width: 65%;>
   <!--  General -->
-  <div class="form-group column">
+  {{-- <div class="form-group column">
     <h2 class="heading">Booking & contact</h2>
     <div class="controls">
       <input type="text" id="name" class="floatLabel" name="name">
@@ -251,7 +177,7 @@
         <input type="text" id="country" class="floatLabel" name="country">
         <label for="country">Country</label>
       </div>
-  </div>
+  </div> --}}
   <!--  Details -->
   <div class="form-group column">
     <h2 class="heading">Details</h2>
@@ -315,7 +241,7 @@
           <label for="comments">Comments</label>
           </div>
             <div class="div justify-center color-lightGray">
-                                                <a class="btn btn-cart btn-carrito color-white " href="#">
+                                                <a class="btn btn-cart btn-carrito color-white " href="/payment">
                                                     PAY NOW
                                                 </a>
                                      </div>
