@@ -86,21 +86,22 @@
                                                                                      
 
                                              
-            <div id="account-panel">
+            @if (Auth::check())
+                <div id="account-panel">
 
             <div class="account-header row-responsive" >
               <div class="column justify-center align-center"> 
                   <div class="responsive-img ">
-                    <img class="image-profile-popview" src="img/portadas/profile.jpg"/>
+                    <img class="image-profile-popview" src="{{ asset('img/users/'.Auth::user()->image) }}"/>
                 </div>
                 </div>
                 <div class="column justify-center align-center" style="width: 114%;">   
                 
                 <div id="profile-details column">
-                    <h1>John Smith</h1>
+                    <h3>{{ Auth::user()->name }}</h3>
                 </div>
                     <div id="profile-details column">
-                    <h2>Manager</h2>
+                    <h2>{{ Auth::user()->type }}</h2>
                     </div>
                     <div id="profile-buttons ">
                         <div class="view-profile">View Profile</div>
@@ -115,13 +116,15 @@
                 <ul class="account-menu-list" style="width: 100%;">
 
                     <li>Upgrade to <span>pro</span></li>
-                    <li>Schedule</li>
+                    <li>Reservations</li>
+                    <li>Configurations</li>
                     <li >{{-- <span style="font-size: 2rem;"><a class="fas fa-arrow-alt-circle-right"></a></span> --}}<a id="logout" href="/logout">Cerrar Sesión</a></li>
                 </ul>
 
             </div><!--end account-menu-->
 
-              </div><!--end account-panel--> 
+              </div>
+            @endif<!--end account-panel--> 
                                                 </div>
                                             </div>
                                         </div>

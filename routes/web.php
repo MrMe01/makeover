@@ -20,6 +20,7 @@ Route::get('/','HomeController@index');
 
 
 
+
 Route::get('/catalog','CatalogController@index');
 
 Route::get('/promotions','PromotionController@index');

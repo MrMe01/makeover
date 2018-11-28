@@ -19,16 +19,18 @@ $factory->define(App\User::class, function (Faker $faker) {
 $address2 = "Casa con rejas negras en forma de flores";
 $address3 = "Casa #5, segundo piso";
     return [
-        'name'              => $faker->name,
+        'name'              => 'Andres Romero',
         'email'             => 'joandres098@gmail.com',
         // 'email' => 'joandres098@gmail.com',
         'password'          => 'secret', // secret
         'remember_token'    => str_random(10),
+        'image'             => 'user1.png',
         'address'           => $faker->address,
         'cp'                => $faker->randomElement(['77536','77532','77598','88753','96321','78954']),
         'cel'               => $faker->randomElement(['9988417622','9981311053','9987569234']),
         'addressdetails'    => $faker->randomElement([$address1,$address2,$address3]),
-        'type'              => $faker->randomElement(['user','admin','employee']),
+        'type'              => 'Cliente'
+        // 'type'              => $faker->randomElement(['Cliente','Administrador','Empleado']),
     ];
 });
 
