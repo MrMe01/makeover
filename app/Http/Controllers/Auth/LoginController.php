@@ -18,9 +18,13 @@ class LoginController extends Controller
        $credentials = $this->validate($request,$rules);
 
        if (Auth::attempt($credentials)) {
-           return "iniciaste";
+           return redirect('home');
        }
-       return redirect(redirect()->getUrlGenerator()->previous())->withErrors(['email' => trans('auth.failed')]);
+       //http://makeover.com/#popup1
+       //redirect()->getUrlGenerator()->previous()
+       return redirect('http://makeover.com/#popup1')
+       ->withErrors(['email' => trans('auth.failed')])
+       ->withInput(['email' =>$request->email]);
    }
 }
  /*
