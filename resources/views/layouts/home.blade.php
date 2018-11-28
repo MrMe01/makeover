@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="{{URL::asset('css/loginreg.css')}}" media="screen">
+  
+    
+    @yield('references')
+      <link rel="stylesheet" href="{{URL::asset('css/loginreg.css')}}" media="screen">
     <link rel="stylesheet" href="{{URL::asset('css/viewProfile-pop.css')}}" media="screen">
      <script type="text/javascript" src="{{URL::asset('js/viewProfile-pop.js')}}" ></script>
-    @yield('references')
 
 </head>
 <body>
