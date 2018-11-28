@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{{URL::asset('css/loginreg.css')}}" media="screen">
     @yield('references')
 
+    <link rel="stylesheet" href="{{URL::asset('css/viewProfile-pop.css')}}" media="screen">
+    <script type="text/javascript" src="js/viewProfile-pop.js" defer></script>
+
 </head>
 <body>
 
@@ -59,11 +62,7 @@
                                                 REGISTER
                                             </a>
 
-                                            <a class="weight-medium iconItem" href="/register">
-                                                EXIT
-                                            </a>
-
-                                           
+                                                                                     
 
                                              <a class=" account-btn weight-medium iconItem">
                                                 PROFILE
