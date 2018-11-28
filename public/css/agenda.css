@@ -9,6 +9,10 @@ blockquote, q {
     padding-left: 9%;
 }
 
+.colum-agen{
+background: white;
+}
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
