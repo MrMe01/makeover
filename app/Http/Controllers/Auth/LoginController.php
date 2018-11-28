@@ -26,6 +26,13 @@ class LoginController extends Controller
        ->withErrors(['email' => trans('auth.failed')])
        ->withInput(['email' =>$request->email]);
    }
+   public function logout()
+   {
+       Auth::logout();
+       return redirect('/');
+   }
+
+
 }
  /*
     |--------------------------------------------------------------------------
