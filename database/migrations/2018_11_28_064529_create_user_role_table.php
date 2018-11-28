@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class EmployeeServiceTable extends Migration
+class CreateUserRoleTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class EmployeeServiceTable extends Migration
      */
     public function up()
     {
-        Schema::create('employee_service', function (Blueprint $table) {
+        Schema::create('user_role', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('service_id');
-            $table->integer('employee_id');
+            $table->integer('user_id');
+            $table->integer('role_id');
+
         });
     }
 
@@ -28,6 +29,6 @@ class EmployeeServiceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('employee_service');
+        Schema::dropIfExists('user_role');
     }
 }

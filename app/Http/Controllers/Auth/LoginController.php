@@ -39,12 +39,15 @@ class LoginController extends Controller
        //  //Auth::login($user); 
        // $user = User::where('email',$credentials['email'])->where('password',$credentials['password'])->get()[0];
        // // dd($user);
-       $userValidado = User::where('email',$email)->where('password',$pass)->first();
-       if (Auth::loginUsingId($userValidado->id)) {
-           return redirect('/');
-          
+       $user = User::where('email',$email)->where('password',$pass)->first();
+       // dd($userValidado);
+       if ($user->email == $email && $user->password == $pass) {
+           if (Auth::loginUsingId($user->id)) {
+             return redirect('/');
+            
+          }
        }
-       return "nada";
+       // return "nada";
        //http://makeover.com/#popup1
        //redirect()->getUrlGenerator()->previous()
        //

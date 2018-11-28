@@ -21,7 +21,7 @@ class CreateBranchesTable extends Migration
             $table->string('address');
             $table->string('cp');
             $table->string('paypal');
-            // $table->integer('workdays');// la diferencia de la suma da el dia, sustituye workdays
+                                    // $table->integer('workdays');// la diferencia de la suma da el dia, sustituye workdays
             $table->string('schedule');//horario/ format 24hrs 3:00-19:00
             $table->integer('brand_id')->unsigned();
             $table->timestamps();

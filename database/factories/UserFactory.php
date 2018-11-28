@@ -29,7 +29,7 @@ $address3 = "Casa #5, segundo piso";
         'cp'                => $faker->randomElement(['77536','77532','77598','88753','96321','78954']),
         'cel'               => $faker->randomElement(['9988417622','9981311053','9987569234']),
         'addressdetails'    => $faker->randomElement([$address1,$address2,$address3]),
-        'type'              => 'Cliente'
+        'type'              => 'User'
         // 'type'              => $faker->randomElement(['Cliente','Administrador','Empleado']),
     ];
 });

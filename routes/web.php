@@ -18,17 +18,22 @@ Route::get('/homes', function () {
 });
 Route::get('/','HomeController@index');
 
+Route::get('/roles',[
+    'uses'=>'HomeController@roles',
+    'as'=>'roles',
+    'middleware'=>'roles',
+    'roles'=>['Admin','Author']
+]);
 
 
-
-Route::get('/catalog','CatalogController@index');
+Route::resource('/catalog','CatalogController');
 
 Route::get('/promotions','PromotionController@index');
 
 
-Route::get('/details', function () {
-    return view('details');
-});
+// Route::get('/details', function () {
+//     return view('details');
+// });
 
 /* PROFILE 4 SECTIONES*/
 Route::get('/profileProvider', function () {
@@ -75,3 +80,14 @@ Route::get('/', function () {
 
 // Auth::routes();
 
+Route::get(
+    'payment',array(
+    'as' => 'payment', 
+    'uses' =>'PaypalController@postPayment' 
+    )
+);
+Route::get('payment/status',array(
+    'as' => 'payment.status',
+    'uses'=>'PaypalController@getPaymentStatus' 
+    )
+);

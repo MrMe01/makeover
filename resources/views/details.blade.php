@@ -4,16 +4,16 @@
 
 @section('references')
        
-     <link rel="stylesheet" href="css/core.min.css" media="screen">
-    <link rel="stylesheet" href="css/style.css" media="screen">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/stylekath.css" media="screen">
-    <link rel="stylesheet" href="css/navflex.css" media="screen">
-    <link rel="stylesheet" href="css/product-cards.css" media="screen">
-    <link rel="stylesheet" href="css/searchBtn.css" media="screen">
-    <link rel="stylesheet" href="css/cardsBestSeller.css" media="screen">
-    <link rel="stylesheet" href="css/loginreg.css" media="screen">
-    <link rel="stylesheet" href="css/popup-moreDetails.css" media="screen">
+     <link rel="stylesheet" href="{{ asset('css/core.min.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/stylekath.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/navflex.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/product-cards.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/searchBtn.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/cardsBestSeller.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/loginreg.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ asset('css/popup-moreDetails.css') }}" media="screen">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
@@ -22,22 +22,22 @@
    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Marmelad" rel="stylesheet">
     
     <!-- Start WOWSlider.com HEAD section -->
-    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('engine1/style.css') }}" />
+    <script type="text/javascript" src="{{ asset('engine1/jquery.js') }}"></script>
     <!-- End WOWSlider.com HEAD section -->
     
       <!-- Flickity -->
-    <link rel="stylesheet" href="{{URL::asset('css/flickity.css')}}" media="screen">
-    <script src="{{URL::asset('js/flickity.pkgd.min.js')}}" defer></script>    
+    <link rel="stylesheet" href="{{asset('css/flickity.css')}}" media="screen">
+    <script src="{{asset('js/flickity.pkgd.min.js')}}" defer></script>    
     <!-- End Flickity -->
     
     <!-- SLICK -->
-    <link rel="stylesheet" type="text/css" href="{{URL::asset('css/slick.css')}}"/>
-    <script type="text/javascript" src="{{URL::asset('js/slick.min.js')}}"></script>
-    <script type="text/javascript" src="{{URL::asset('js/slide-description.js')}}" defer></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/slick.css')}}"/>
+    <script type="text/javascript" src="{{asset('js/slick.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/slide-description.js')}}" defer></script>
     <!-- END SLICK -->
     
-    <script type="text/javascript" src="{{URL::asset('js/products-cards.js')}}" defer></script>
+    <script type="text/javascript" src="{{asset('js/products-cards.js')}}" defer></script>
     
 
 @endsection
@@ -75,45 +75,45 @@
                                 <div class=" column">
                                 <div class="slider-for image-big-container">
                                     <div class="item responsive-img image-big-container">
-                                            <img class="principal-images image-big" src="img/description/artistic.jpg"/>
+                                            <img class="principal-images image-big" src="{{ asset('img/services/'.$serv->image) }}"/>
                                     </div>
                                     <div class="item responsive-img image-big-container">
-                                            <img class="principal-images image-big" src="img/description/artistic2.jpg"/>
+                                            <img class="principal-images image-big" src="{{ asset('img/services/'.$serv->image) }}"/>
                                     </div>
                                     <div class="item responsive-img image-big-container">
-                                            <img class="principal-images image-big" src="img/description/artistic3.jpg"/>
+                                            <img class="principal-images image-big" src="{{ asset('img/services/'.$serv->image) }}"/>
                                     </div>
                                     <div class="item responsive-img image-big-container">
-                                            <img class="principal-images image-big" src="img/description/artistic4.jpg"/>
+                                            <img class="principal-images image-big" src="{{ asset('img/services/'.$serv->image) }}"/>
                                     </div>
                                     <div class="item responsive-img image-big-container">
-                                            <img class="principal-images image-big" src="img/description/artistic5.jpg"/>
+                                            <img class="principal-images image-big" src="{{ asset('img/services/'.$serv->image) }}"/>
                                     </div>
                                 </div>
                                 <div class="slider-nav row row-small slick-track2">
                                     <div class="item space-small slick-slide2 " >
                                         <div class="responsive-img image-small-container">
-                                            <img class="principal-images image-small" src="img/description/artistic.jpg"/>
+                                            <img class="principal-images image-small" src="{{ asset('img/services/'.$serv->image) }}"/>
                                         </div>
                                     </div>
                                     <div class="item space-small slick-slide2 ">
                                         <div class="responsive-img image-small-container">
-                                            <img class="principal-images image-small" src="img/description/artistic2.jpg"/>
+                                            <img class="principal-images image-small" src="{{ asset('img/services/'.$serv->image) }}"/>
                                         </div>
                                     </div>
                                     <div class="item space-small slick-slide2 ">
                                         <div class="responsive-img image-small-container">
-                                            <img class="principal-images image-small" src="img/description/artistic3.jpg"/>
+                                            <img class="principal-images image-small" src="{{ asset('img/services/'.$serv->image) }}"/>
                                         </div>
                                     </div>
                                     <div class="item space-small slick-slide2">
                                         <div class="responsive-img image-small-container">
-                                            <img class="principal-images image-small" src="img/description/artistic4.jpg"/>
+                                            <img class="principal-images image-small" src="{{ asset('img/services/'.$serv->image) }}"/>
                                         </div>
                                     </div>
                                     <div class="item space-small slick-slide2">
                                         <div class="responsive-img image-small-container">
-                                            <img class="principal-images image-small" src="img/description/artistic5.jpg"/>
+                                            <img class="principal-images image-small" src="{{ asset('img/services/'.$serv->image) }}"/>
                                         </div>
                                     </div>
                                     
@@ -125,7 +125,7 @@
                                  <div class="column">
                                    <div class="detail-name justify-start">
                                                 <h3>
-                                                    NOMBRE SERVICIO
+                                                    {{ $serv->name }}
                                                 </h3>
                                    </div>
                                      <div class="white-space-8"></div>
@@ -138,7 +138,7 @@
                                                 <i class="fa fa-star" aria-hidden="true"></i>
                                                 <i class="fa fa-star" aria-hidden="true"></i>
 
-                                                <div class="front-stars" style="width: 50%">
+                                                <div class="front-stars" style="width: 70%">
                                                     <i class="fa fa-star" aria-hidden="true"></i>
                                                     <i class="fa fa-star" aria-hidden="true"></i>
                                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -151,7 +151,7 @@
                                      <div class="white-space-16"></div>
                                      <div class="promotion-price price-detail justify-start align-start">
                                         <h4 class="price">
-                                            $500.00 &nbsp;
+                                            {{ $serv->price }} &nbsp;
                                         </h4>
                                         <h5 class=" discount">
                                             $667.00
@@ -163,25 +163,25 @@
                                                     Description
                                                 </h3>
                                                 <div class="white-space-8"></div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, harum inventore a sit quis eum nemo expedita reprehenderit laborum tempora modi neque praesentium totam cum omnis excepturi, sequi vero alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur.</p>
+                                                <p>{{ $serv->description }}</p>
                                    </div>
                                    <div class="white-space-24"></div>
 
                                    <div class="row row-profile">
                                      <div class="column column-image-profile fadeInLeft ">
                                             <div class="responsive-img ">
-                                                <img class="image-profile-detal" src="img/portadas/profile.jpg"/>
+                                                <img class="image-profile-detal" src="{{ asset('img/branch/branch'.$proveedor->id.".jpg") }}"/>
                                             </div>
                                     </div>
                                        
                                     <div class="detail-descrip justify-start column">
                                                 <div class="white-space-8"></div>
                                                 <h3>
-                                                    Name provider
+                                                    {{ $proveedor->name }}
                                                 </h3>
                                                 <div class="white-space-8"></div>
                                                 <div class=" justify-start align-start">
-                                                    <div class="star-rating" title="100%" style="width: 69%;">
+                                                    <div class="star-rating" title="100%" style="width: 80%;">
                                                         <div class="back-stars stars-profile">
                                                             <i class="fa fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -189,7 +189,7 @@
                                                             <i class="fa fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star" aria-hidden="true"></i>
 
-                                                            <div class="front-stars front-profile" style="width: 50%">
+                                                            <div class="front-stars front-profile" style="width: 90%">
                                                                 <i class="fa fa-star" aria-hidden="true"></i>
                                                                 <i class="fa fa-star" aria-hidden="true"></i>
                                                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -221,7 +221,7 @@
                                                 </a>
                                      </div>
                                      <div class="div justify-center color-lightGray">
-                                                <a class="btn btn-cart btn-buy color-white " href="#">
+                                                <a class="btn btn-cart btn-buy color-white " href="/payment">
                                                     BUY NOW
                                                 </a>
                                      </div>
