@@ -202,11 +202,13 @@
                     </div> 
                 </div>                               
             </footer>
-
+{{-- START LOGIN --}}
              <div id="popup1" class="overlay">
             <div class="popup">
                 <a class="close" href="#">&times;</a>
-                <form class="login-form">
+                <form class="login-form" method="POST" action="/login">
+                  @csrf
+                  
                                        <!--   con = Container  for items in the form-->
                                        <div class="con">
                                        <!--     Start  header Content  -->
@@ -231,8 +233,8 @@
                                              <span class="input-item2">
                                                <i class="fa fa-user-circle"></i>
                                              </span>
-                                            <!--   user name Input-->
-                                             <input class="form-input2" id="txt-input2" type="text" placeholder="@UserName" required>
+                                            <!--   user email Input-->
+                                             <input class="form-input2" name="email" id="email" type="email" placeholder="@email" required>
                                             </div>
                                           <br>
 
@@ -249,16 +251,17 @@
                                             <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
                                          </span>
                                            </div>
-
-
+                                         <div id="errors" class="errors row justify-center">
+                                            {!! $errors->first('email','<span class="">:message</span>') !!}
+                                         </div>
                                           <br>
                                     <!--        buttons -->
                                     <!--      button LogIn -->
-                                          <button class="log-in2"> Log In </button>
+                                          <button type="submit" class="log-in2"> Log In </button>
                                        </div>
 
                                     <!--   other buttons -->
-                                       <div class="other">
+                                       {{-- <div class="other">
                                     <!--      Forgot Password button-->
                                           <button class="btn submits frgt-pass">Forgot Password</button>
                                     <!--     Sign Up button -->
@@ -267,7 +270,7 @@
                                           <i class="fa fa-user-plus" aria-hidden="true"></i>
                                           </button>
                                     <!--      End Other the Division -->
-                                       </div>
+                                       </div> --}}
 
                                     <!--   End Conrainer  -->
                                       </div>
@@ -276,7 +279,7 @@
                                     </form>
             </div>
         </div>
-            
+            {{-- END LOGIN --}}
             
             @yield('pops');
 

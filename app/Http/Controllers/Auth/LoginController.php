@@ -1,13 +1,29 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use Auth;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
+// use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
-    /*
+   public function login(Request $request)
+   {    
+    // return $request->path();
+        $rules =[
+            "email"     =>"required|email|string",
+            "password"  =>"required|string",
+        ];
+       $credentials = $this->validate($request,$rules);
+
+       if (Auth::attempt($credentials)) {
+           return "iniciaste";
+       }
+       return redirect(redirect()->getUrlGenerator()->previous())->withErrors(['email' => 'Credenciales incorrectas']);
+   }
+}
+ /*
     |--------------------------------------------------------------------------
     | Login Controller
     |--------------------------------------------------------------------------
@@ -18,22 +34,21 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
+    // use AuthenticatesUsers;
 
-    /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
+    // /**
+    //  * Where to redirect users after login.
+    //  *
+    //  * @var string
+    //  */
+    // protected $redirectTo = '/home';
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
-}
+    // *
+    //  * Create a new controller instance.
+    //  *
+    //  * @return void
+     
+    // public function __construct()
+    // {
+    //     $this->middleware('guest')->except('logout');
+    // }
