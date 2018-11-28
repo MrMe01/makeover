@@ -58,9 +58,52 @@
                                             <a class="weight-medium iconItem" href="/register">
                                                 REGISTER
                                             </a>
+
                                             <a class="weight-medium iconItem" href="/register">
                                                 EXIT
                                             </a>
+
+                                           
+
+                                             <a class=" account-btn weight-medium iconItem">
+                                                PROFILE
+                                            </a>
+            <div id="account-panel">
+
+            <div class="account-header row-responsive" >
+              <div class="column justify-center align-center"> 
+                  <div class="responsive-img ">
+                    <img class="image-profile-popview" src="img/portadas/profile.jpg"/>
+                </div>
+                </div>
+                <div class="column justify-center align-center" style="width: 114%;">   
+                
+                <div id="profile-details column">
+                    <h1>John Smith</h1>
+                </div>
+                    <div id="profile-details column">
+                    <h2>Manager</h2>
+                    </div>
+                    <div id="profile-buttons ">
+                        <div class="view-profile">View Profile</div>
+                        <div class="add-account">Upgrade</div>
+                    </div>
+                </div>
+
+            </div><!--end account-header-->
+
+            <div class="account-menu">
+
+                <ul class="account-menu-list" style="width: 100%;">
+
+                    <li>Upgrade to <span>pro</span></li>
+                    <li>Schedule</li>
+                    <li>Sign Out</li>
+                </ul>
+
+            </div><!--end account-menu-->
+
+              </div><!--end account-panel--> 
                                                 </div>
                                             </div>
                                         </div>
