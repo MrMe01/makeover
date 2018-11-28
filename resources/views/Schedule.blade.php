@@ -21,25 +21,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
     
    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Marmelad" rel="stylesheet">
-    
-    <!-- Start WOWSlider.com HEAD section -->
-    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-    <script type="text/javascript" src="engine1/jquery.js"></script>
-    <!-- End WOWSlider.com HEAD section -->
-    
-      <!-- Flickity -->
-    <link rel="stylesheet" href="css/flickity.css" media="screen">
-    <script src="js/flickity.pkgd.min.js" defer></script>    
-    <!-- End Flickity -->
-    
-    <!-- SLICK -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/slide-description.js" defer></script>
-    <!-- END SLICK -->
-    
-    <script type="text/javascript" src="js/products-cards.js" defer></script>
-    <script type="text/javascript" src="js/employees.js" defer></script>
+   
 @endsection
 
 @section('content')
