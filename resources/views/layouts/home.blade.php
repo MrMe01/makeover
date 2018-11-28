@@ -6,16 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    {{-- <script type="text/javascript" src="{{ asset('js/jquery-3.0.0.min.js') }}"></script> --}}
     <link rel="stylesheet" href="{{URL::asset('css/loginreg.css')}}" media="screen">
     @yield('references')
 
     <link rel="stylesheet" href="{{URL::asset('css/viewProfile-pop.css')}}" media="screen">
     <script type="text/javascript" src="js/viewProfile-pop.js" defer></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    <style type="text/css">
+        #logout{
+            cursor: pointer;
+        }
+    </style>
     <script type="text/javascript">
         $(document).ready(function(){
+
             $(document).on('click','#logout',function(){
                 alert("fghj");
             });            
@@ -112,7 +117,7 @@
 
                     <li>Upgrade to <span>pro</span></li>
                     <li>Schedule</li>
-                    <li id="logout"><span style="font-size: 2rem;"><a class="fas fa-arrow-alt-circle-right"></a></span></li>
+                    <li id="logout">{{-- <span style="font-size: 2rem;"><a class="fas fa-arrow-alt-circle-right"></a></span> --}}Cerrar Sesión</li>
                 </ul>
 
             </div><!--end account-menu-->
