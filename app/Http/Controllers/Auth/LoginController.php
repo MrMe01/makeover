@@ -20,7 +20,7 @@ class LoginController extends Controller
        if (Auth::attempt($credentials)) {
            return "iniciaste";
        }
-       return redirect(redirect()->getUrlGenerator()->previous())->withErrors(['email' => 'Credenciales incorrectas']);
+       return redirect(redirect()->getUrlGenerator()->previous())->withErrors(['email' => trans('auth.failed')]);
    }
 }
  /*

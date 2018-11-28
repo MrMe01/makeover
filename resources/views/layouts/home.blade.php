@@ -234,7 +234,7 @@
                                                <i class="fa fa-user-circle"></i>
                                              </span>
                                             <!--   user email Input-->
-                                             <input class="form-input2" name="email" id="email" type="email" placeholder="@email" required>
+                                             <input class="form-input2" name="email" id="email" type="email" placeholder="@email" value="@old" required>
                                             </div>
                                           <br>
 
