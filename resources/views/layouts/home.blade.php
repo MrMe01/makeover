@@ -62,9 +62,7 @@
                                             <a class="weight-medium iconItem" href="/register">
                                                 REGISTER
                                             </a>
-                                            <a class="weight-medium iconItem" href="/register">
-                                                EXIT
-                                            </a>
+                                           
 
                                              <a class=" account-btn weight-medium iconItem">
                                                 PROFILE
